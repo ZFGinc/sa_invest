@@ -3,7 +3,7 @@ version: '3.7'
 services:
   invest_crm_api:
     build: .
-    command: uvicorn main:app --host 0.0.0.0 --port 80
+    command: uvicorn main:app --reload --host 0.0.0.0 --port 80
     volumes:
       - ./src:/app
     ports:
